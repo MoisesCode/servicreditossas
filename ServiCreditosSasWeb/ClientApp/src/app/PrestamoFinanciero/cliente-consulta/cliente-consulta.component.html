@@ -1,0 +1,24 @@
+<table class="table table-striped" *ngIf='clientes && clientes.length'>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Identificación</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Capital inicial</th>
+            <th scope="col">Interes</th>
+            <th scope="col">Tiempo</th>
+            <th scope="col">Total a pagar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ cliente.identificacion }} </td>
+            <td>{{ cliente.nombre }}</td>
+            <td>{{ cliente.capitalInicial  }}</td>
+            <td>{{ cliente.interes }}</td>
+            <td>{{ cliente.tiempo }}</td>
+            <td>{{ cliente.totalAPagar }}</td>
+        </tr>
+    </tbody>
+</table>

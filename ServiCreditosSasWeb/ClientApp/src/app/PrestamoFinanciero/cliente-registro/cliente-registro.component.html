@@ -1,0 +1,31 @@
+<div id="containerMain">
+    <div id="containerForm">
+        <form id="formMain" class="col-md-4">
+            <div class="form-group">
+                <label>Identificacion</label>
+                <input type="text" name="identificacion" class="form-control" [(ngModel)]="cliente.identificacion">
+            </div>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" name="nombre" class="form-control" [(ngModel)]="cliente.nombre">
+            </div>
+            <div class="form-group">
+                <label>Capital inicial</label>
+                <input type="number" name="capitalInicial" class="form-control" [(ngModel)]="cliente.capitalInicial">
+            </div>
+            <div class="form-group">
+                <label>Interes</label>
+                <input type="number" name="Interes" placeholder="Digite el interes, ejemplo 10" class="form-control" [(ngModel)]="cliente.interes">
+            </div>
+            <div class="form-group">
+                <label>Tiempo</label>
+                <input type="number" name="Tiempo" placeholder="Digite el tiempo en meses, ejemplo 3" class="form-control" [(ngModel)]="cliente.tiempo">
+            </div>
+
+            <div class="text-center">
+                <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
+                <button type="button" class="btn btn-primary" (click)="registrar()">Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
